@@ -36,6 +36,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.defaultMinSize
@@ -194,7 +195,7 @@ fun DropdownMenu(
       DropdownMenuPanel(
         modifier = (
           modifier
-            .width(DropdownMenuMaxWidth)
+            .width(IntrinsicSize.Max)
             .heightIn(max = DropdownMenuMaxHeight)
             .graphicsLayer {
               this.shadowElevation = shadowElevation.toPx()
