@@ -1,0 +1,31 @@
+[versions]
+unstyled = "2.4.0"
+
+kotlin = "2.3.20"
+compose = "1.11.0-alpha01"
+compose-material3 = "1.11.0-alpha01"
+
+activity-core = "1.10.1"
+annotation = "1.9.1"
+android-compileSDK = "36"
+android-minSDK = "23"
+agp = "8.13.2"
+
+icons-material-symbols-rounded-cmp = "2.2.1"
+navigation-compose = "2.9.0-beta01"
+
+[libraries]
+androidx-activitycompose = { module = "androidx.activity:activity-compose", version.ref = "activity-core" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "compose-material3" }
+composeunstyled = { module = "com.composables:composeunstyled", version.ref = "unstyled" }
+composeunstyled-build-modifier = { module = "com.composables:composeunstyled-build-modifier", version.ref = "unstyled" }
+composeunstyled-window-container-size = { module = "com.composables:composeunstyled-window-container-size", version.ref = "unstyled" }
+icons-material-symbols-rounded-cmp = { module = "com.composables:icons-material-symbols-rounded-cmp", version.ref = "icons-material-symbols-rounded-cmp" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+
+[plugins]
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "agp" }
